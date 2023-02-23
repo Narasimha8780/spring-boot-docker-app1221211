@@ -17,7 +17,7 @@ pipeline {
         
         stage('Build'){
 		steps{
-			sh "mvn clean package"
+			sh "mvn build -Dmaven.compiler.target=3.2.0"
 		}
 	  }
        
