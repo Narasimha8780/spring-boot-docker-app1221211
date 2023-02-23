@@ -9,6 +9,7 @@ pipeline {
         
         stage('Clone Repo') {
           steps {
+	    checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Narasimha8780/spring-boot-docker-app1221211.git']])  
             sh 'rm -rf spring-boot-docker-app1221211'
             sh 'git clone https://github.com/Narasimha8780/spring-boot-docker-app1221211.git '
             }
