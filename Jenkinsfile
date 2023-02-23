@@ -17,7 +17,7 @@ pipeline {
         
         stage('Build'){
 		steps{
-			sh "mvn build -Dmaven.compiler.target=3.2.0"
+			sh "mvn -Dmaven.compiler.target=3.2.0"
 		}
 	  }
        
